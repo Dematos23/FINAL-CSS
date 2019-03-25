@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Comenzando con la Fotografía</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1>Comenzando con la Fotografía</h1>
       <nav>
-        <a href="index.html">Inicio</a>
+        <a href="index.html" id="navindex">Inicio</a>
         <a href="Paisajes.html">Paisajes</a>
         <a href="Retratos.html">Retratos</a>
       </nav>
     </header>
-    <section>
+    <section id="central">
       <picture>
         <source media="(min-width: 1680px)" srcset="imagenes/inicio/central/1.jpg" alt="velero">
         <source media="(min-width: 1280px)" srcset="imagenes/inicio/central/2.jpg" alt="velero">
@@ -23,7 +25,7 @@
         <img src="imagenes/inicio/central/5.jpg" alt="velero">
       </picture>
     </section>
-    <section>
+    <section class="secundaria">
       <picture>
         <source media="(min-width: 1680px)" srcset="imagenes/inicio/secundaria_a/1.jpg" alt="paisaje">
         <source media="(min-width: 1280px)" srcset="imagenes/inicio/secundaria_a/2.jpg" alt="paisaje">
