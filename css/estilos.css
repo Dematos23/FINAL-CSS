@@ -31,10 +31,23 @@ nav a {
 }
 #central {
   background-color: #82c3a6;
+  padding: 20px 0;
 }
-.secundaria {
+#central picture, #central img{
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+#secundaria {
   background-color: #d5c75f;
-  margin: 0px;
+  display: flex;
+  padding: 20px 0;
+}
+#secundaria picture, #secundaria img{
+  display:flex;
+  width: 80%;
+  height: 80%;
+  margin: auto;
 }
 footer{
   background-color: #c6d5c5;
