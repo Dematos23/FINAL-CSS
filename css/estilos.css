@@ -1,9 +1,12 @@
 @font-face {
   font-family: dancing script;
 }
+                                        /*INDEX HTML*/
+/*HEADER*/
 body{
   background-color: black;
   font-family: dancing script;
+  padding: 0 10vw;
 }
 header {
   background-color: #5b7989;
@@ -29,27 +32,69 @@ nav a {
 #navindex, #navretratos, #navpaisajes{
   text-decoration: none;
 }
+/*IMAGEN CENTRAL*/
 #central {
   background-color: #82c3a6;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
-#central picture, #central img{
-  width: 95%;
+#central img{
+  width: 100%;
   display: block;
   margin: auto;
+  box-shadow: 5px 5px black;
 }
+/*IMAGENES SECUNDARIAS*/
 #secundaria {
   background-color: #d5c75f;
+  padding: 20px 0px;
   display: flex;
-  padding: 20px 0;
 }
-#secundaria picture, #secundaria img{
-  display:flex;
-  width: 80%;
-  height: 80%;
-  margin: auto;
+#seundaria picture, #secundaria img {
+  width: 100%;
 }
+#paisaje, #retrato{
+  margin: 20px;
+}
+#paisaje img, #retrato img{
+  box-shadow: 5px 5px black;
+  border: solid 2px black;
+  transition: transform 1s, box-shadow 1s, border 1s;
+}
+#paisaje img:hover{
+  transform: rotate(10deg);
+  box-shadow: 5px 5px #82c3a6;
+  border: solid 2px #82c3a6;
+}
+#retrato img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 5px 5px #82c3a6;
+  border: solid 2px #82c3a6;
+}
+/*FOOTER*/
 footer{
   background-color: #c6d5c5;
-  margin: 0;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+.footer{
+  display: block;
+  margin: 10px;
+  flex-grow: 1;
+}
+.footer h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+a img{
+  width: 20px;
+  height: 20px
+  display: inline;
+}
+.footer a,.footer p{
+  display: block;
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: auto;
 }
