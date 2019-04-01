@@ -1,100 +1,215 @@
 @font-face {
   font-family: dancing script;
 }
-                                        /*INDEX HTML*/
-/*HEADER*/
-body{
+@media (min-width: 900px) {
+    /*INDEX HTML*/
+  /*HEADER*/
+  body{
   background-color: black;
   font-family: dancing script;
-  padding: 0 10vw;
-}
-header {
+  }
+  #contenido{
+  width: 900px;
+  margin: auto;
+  }
+  header {
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-  width: 100%;
   height: 80px;
-}
-header h1{
+  }
+  header h1{
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   display: inline;
   position: absolute;
   margin: 15px 0px 0px 15px;
   }
-nav{
+  nav{
   float: right;
   margin: 19px 15px 0 0;
-}
-nav a {
+  }
+  nav a {
   color: white;
   font-size: 1.5em;
-}
-#navindex, #navretratos, #navpaisajes{
+  }
+  #navindex, #navretratos, #navpaisajes{
   text-decoration: none;
-}
-/*IMAGEN CENTRAL*/
-#central {
+  }
+  /*IMAGEN CENTRAL*/
+  #central {
   background-color: #82c3a6;
   padding: 20px 40px;
-}
-#central img{
-  width: 100%;
+  }
+  #central img{
   display: block;
   margin: auto;
-  box-shadow: 5px 5px black;
-}
-/*IMAGENES SECUNDARIAS*/
-#secundaria {
+  box-shadow: 5px 5px #02010a;
+  width: 100%;
+  }
+  /*IMAGENES SECUNDARIAS*/
+  #secundaria {
   background-color: #d5c75f;
   padding: 20px 0px;
   display: flex;
-}
-#seundaria picture, #secundaria img {
+  }
+  #seundaria picture, #secundaria img {
   width: 100%;
-}
-#paisaje, #retrato{
+  }
+  #paisaje, #retrato{
   margin: 20px;
-}
-#paisaje img, #retrato img{
-  box-shadow: 5px 5px black;
+  }
+  #paisaje img, #retrato img{
+  box-shadow: 5px 5px #02010a;
   border: solid 2px black;
   transition: transform 1s, box-shadow 1s, border 1s;
-}
-#paisaje img:hover{
+  }
+  #paisaje img:hover{
   transform: rotate(10deg);
   box-shadow: 5px 5px #82c3a6;
   border: solid 2px #82c3a6;
-}
-#retrato img:hover{
+  }
+  #retrato img:hover{
   transform: translate(20px,-5px);
   box-shadow: 5px 5px #82c3a6;
   border: solid 2px #82c3a6;
-}
-/*FOOTER*/
-footer{
+  }
+  figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  /*FOOTER*/
+  footer{
   background-color: #c6d5c5;
   border-radius: 0 0 10px 10px;
   display: flex;
-}
-.footer{
+  }
+  .footer{
   display: block;
   margin: 10px;
   flex-grow: 1;
-}
-.footer h1{
+  }
+  .footer h1{
   font-size: 24px;
   margin-bottom: 10px;
-}
-a img{
+  }
+  a img{
   width: 20px;
   height: 20px
   display: inline;
-}
-.footer a,.footer p{
+  }
+  .footer a,.footer p{
   display: block;
   color: black;
   font-size: 16px;
   font-weight: bolder;
   text-decoration: none;
   margin-top: auto;
+  }
+}
+@media (max-width: 899px) {
+    /*INDEX HTML*/
+  /*HEADER*/
+  body{
+  background-color: black;
+  font-family: dancing script;
+  margin: auto;
+  padding: 10px;
+  }
+  #contenido{
+  width: 100%;
+  margin: auto;
+  }
+  header {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  height: 80px;
+  }
+  header h1{
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  display: inline;
+  position: absolute;
+  margin: 15px 0px 0px 15px;
+  }
+  nav{
+  float: right;
+  margin: 19px 15px 0 0;
+  }
+  nav a {
+  color: white;
+  font-size: 1.5em;
+  }
+  #navindex, #navretratos, #navpaisajes{
+  text-decoration: none;
+  }
+  /*IMAGEN CENTRAL*/
+  #central {
+  background-color: #82c3a6;
+  padding: 20px 40px;
+  }
+  #central img{
+  display: block;
+  margin: 20px auto;
+  box-shadow: 5px 5px #02010a;
+  width: 100%;
+  }
+  /*IMAGENES SECUNDARIAS*/
+  #secundaria {
+  background-color: #d5c75f;
+  padding: 20px 40px;
+  margin-bottom: 0;
+  }
+  #paisaje img, #retrato img{
+  box-shadow: 5px 5px #02010a;
+  border: solid 2px black;
+  transition: transform 1s, box-shadow 1s, border 1s;
+  width: 100%;
+  margin: 20px 0;
+  }
+  #paisaje img:hover{
+  transform: rotate(10deg);
+  box-shadow: 5px 5px #82c3a6;
+  border: solid 2px #82c3a6;
+  }
+  #retrato img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 5px 5px #82c3a6;
+  border: solid 2px #82c3a6;
+  }
+  figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  /*FOOTER*/
+  footer{
+  background-color: #c6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: block;
+  margin-top: 0px;
+  }
+  .footer{
+  display: block;
+  margin: 50px 10vw;
+  }
+  .footer h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  a img{
+  width: 20px;
+  height: 20px
+  display: inline;
+  }
+  .footer a,.footer p{
+  display: block;
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: auto;
+  }
 }
