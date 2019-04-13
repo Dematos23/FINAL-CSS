@@ -3,11 +3,12 @@
 }
 @media (min-width: 900px) {
     /*INDEX HTML*/
+    body{
+    background-color: black;
+    font-family: dancing script;
+    overflow: auto;
+    }
   /*HEADER*/
-  body{
-  background-color: black;
-  font-family: dancing script;
-  }
   #contenido{
   width: 900px;
   margin: auto;
@@ -16,6 +17,7 @@
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
   height: 80px;
+  animation: slidein 1s;
   }
   header h1{
   color: white;
@@ -35,15 +37,26 @@
   #navindex, #navretratos, #navpaisajes{
   text-decoration: none;
   }
+  @keyframes slidein {
+      0%{
+        margin-top: 150%;
+      }
+      60%{
+        margin-top: -5%;
+      }
+      100%{
+        margin-top: 0%;
+      }
+  }
   /*IMAGEN CENTRAL*/
   #central {
   background-color: #82c3a6;
-  padding: 20px 40px;
+  padding: 40px 40px;
   }
   #central img{
   display: block;
   margin: auto;
-  box-shadow: 5px 5px #02010a;
+  box-shadow: 2px 2px #02010a;
   width: 100%;
   }
   /*IMAGENES SECUNDARIAS*/
@@ -59,18 +72,18 @@
   margin: 20px;
   }
   #paisaje img, #retrato img{
-  box-shadow: 5px 5px #02010a;
+  box-shadow: 2px 2px #02010a;
   border: solid 2px black;
   transition: transform 1s, box-shadow 1s, border 1s;
   }
   #paisaje img:hover{
   transform: rotate(10deg);
-  box-shadow: 5px 5px #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
   border: solid 2px #82c3a6;
   }
   #retrato img:hover{
   transform: translate(20px,-5px);
-  box-shadow: 5px 5px #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
   border: solid 2px #82c3a6;
   }
   figcaption{
@@ -106,110 +119,175 @@
   font-weight: bolder;
   text-decoration: none;
   margin-top: auto;
+  margin-bottom: 0;
+  }
+  /*PAISAJES HTML*/
+  .contenedor{
+    background-color: #d5c75f;
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section img{
+    width: 100%;
+    box-shadow: 2px 2px #02010a;
+  }
+  .paisajes, .retratos{
+    width: 30%;
+    margin: 10px auto;
+  }
+  #paisaje1, #retrato1{
+    -webkit-filter: blur(10px);
+  }
+  #paisaje2, #paisaje4, #paisaje6, #retrato2, #retrato4, #retrato6{
+    -webkit-filter: grayscale(100%);
+  }
+  #paisaje3, #retrato3{
+    -webkit-filter: sepia(90%);
   }
 }
+
+
 @media (max-width: 899px) {
-    /*INDEX HTML*/
-  /*HEADER*/
+  /*INDEX HTML*/
   body{
   background-color: black;
   font-family: dancing script;
-  margin: auto;
-  padding: 10px;
+  overflow: auto;
+
   }
-  #contenido{
-  width: 100%;
-  margin: auto;
-  }
-  header {
-  background-color: #5b7989;
-  border-radius: 10px 10px 0 0;
-  height: 80px;
-  }
-  header h1{
-  color: white;
-  text-shadow: 2px 2px 2px #02010a;
-  display: inline;
-  position: absolute;
-  margin: 15px 0px 0px 15px;
-  }
-  nav{
-  float: right;
-  margin: 19px 15px 0 0;
-  }
-  nav a {
-  color: white;
-  font-size: 1.5em;
-  }
-  #navindex, #navretratos, #navpaisajes{
-  text-decoration: none;
-  }
-  /*IMAGEN CENTRAL*/
-  #central {
-  background-color: #82c3a6;
-  padding: 20px 40px;
-  }
-  #central img{
-  display: block;
-  margin: 20px auto;
-  box-shadow: 5px 5px #02010a;
-  width: 100%;
-  }
-  /*IMAGENES SECUNDARIAS*/
-  #secundaria {
+/*HEADER*/
+#contenido{
+width: 100%;
+margin: auto;
+}
+header {
+background-color: #5b7989;
+border-radius: 10px 10px 0 0;
+animation: slidein 1s;
+padding-bottom: 15px;
+}
+header h1{
+color: white;
+text-shadow: 2px 2px 2px #02010a;
+margin: 15px auto;
+text-align: center;}
+nav{
+margin: auto;
+text-align: center;
+}
+nav a {
+color: white;
+font-size: 1.5em;
+}
+#navindex, #navretratos, #navpaisajes{
+text-decoration: none;
+}
+@keyframes slidein {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+}
+/*IMAGEN CENTRAL*/
+#central {
+background-color: #82c3a6;
+padding: 40px 5%;
+}
+#central img{
+margin: auto;
+box-shadow: 2px 2px #02010a;
+width: 100%;
+}
+/*IMAGENES SECUNDARIAS*/
+#secundaria {
+background-color: #d5c75f;
+padding: 20px 5%;
+}
+#paisaje{
+margin: 20px auto 40px;
+}
+#retrato{
+margin: 20px auto;
+}
+
+#paisaje img, #retrato img{
+box-shadow: 2px 2px #02010a;
+border: solid 2px black;
+transition: transform 1s, box-shadow 1s, border 1s;
+}
+#paisaje img:hover{
+transform: rotate(10deg);
+box-shadow: 2px 2px #82c3a6;
+border: solid 2px #82c3a6;
+}
+#retrato img:hover{
+transform: translate(20px,-5px);
+box-shadow: 2px 2px #82c3a6;
+border: solid 2px #82c3a6;
+}
+figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+/*FOOTER*/
+footer{
+background-color: #c6d5c5;
+border-radius: 0 0 10px 10px;
+padding: 20px 50px;
+margin-top: -18px;
+}
+.footer{
+display: block;
+margin: 10px 10px 30px 10px;
+flex-grow: 1;
+}
+.footer h1{
+font-size: 24px;
+margin-bottom: 5px;
+}
+a img{
+width: 20px;
+height: 20px
+display: inline;
+}
+.footer a,.footer p{
+display: block;
+color: black;
+font-size: 16px;
+font-weight: bolder;
+text-decoration: none;
+margin-top: auto;
+margin-bottom: 0;
+}
+/*PAISAJES - RETRATOS*/
+.contenedor{
   background-color: #d5c75f;
-  padding: 20px 40px;
-  margin-bottom: 0;
-  }
-  #paisaje img, #retrato img{
-  box-shadow: 5px 5px #02010a;
-  border: solid 2px black;
-  transition: transform 1s, box-shadow 1s, border 1s;
+  padding: 20px 0px;
   width: 100%;
-  margin: 20px 0;
-  }
-  #paisaje img:hover{
-  transform: rotate(10deg);
-  box-shadow: 5px 5px #82c3a6;
-  border: solid 2px #82c3a6;
-  }
-  #retrato img:hover{
-  transform: translate(20px,-5px);
-  box-shadow: 5px 5px #82c3a6;
-  border: solid 2px #82c3a6;
-  }
-  figcaption{
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: underline;
-  }
-  /*FOOTER*/
-  footer{
-  background-color: #c6d5c5;
-  border-radius: 0 0 10px 10px;
-  display: block;
-  margin-top: 0px;
-  }
-  .footer{
-  display: block;
-  margin: 50px 10vw;
-  }
-  .footer h1{
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
-  a img{
-  width: 20px;
-  height: 20px
-  display: inline;
-  }
-  .footer a,.footer p{
-  display: block;
-  color: black;
-  font-size: 16px;
-  font-weight: bolder;
-  text-decoration: none;
-  margin-top: auto;
-  }
+}
+section img{
+  width: 100%;
+  box-shadow: 2px 2px #02010a;
+}
+.paisajes, .retratos{
+  width: 90%;
+  margin: 40px auto;
+}
+#paisaje1, #retrato1{
+  -webkit-filter: blur(10px);
+}
+#paisaje2, #paisaje4, #paisaje6, #retrato2, #retrato4, #retrato6{
+  -webkit-filter: grayscale(100%);
+}
+#paisaje3, #retrato3{
+  -webkit-filter: sepia(90%);
+}
 }
